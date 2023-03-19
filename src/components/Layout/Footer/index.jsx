@@ -1,12 +1,7 @@
 const Footer = () => {
   return (
-    <footer id="footer">
-      <h1>
-        <span>
-          HOME <span>OF</span>{" "}
-        </span>
-        GAMING
-      </h1>
+    <footer id="footer" className="bg-primary p-5 mt-5">
+      <h1>HOME OF GAMING</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
         fugiat, ipsa quos nulla qui alias.

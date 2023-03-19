@@ -1,15 +1,19 @@
+import Img1 from "/img/img1.jpeg";
+import Img2 from "/img/img2.jpeg";
+import Img3 from "/img/img3.jpeg";
+
 const Book = () => {
   return (
-    <section class="book mt-5" id="book">
-      <div class="container">
-        <div class="main-text">
+    <section className="book mt-5" id="book">
+      <div className="container">
+        <div className="main-text">
           <h1>
             <span>S</span>UIVI DU STATU EL TEMPS REEL *{" "}
           </h1>
         </div>
 
-        <div class="row justify-content-between">
-          <div class="col-lg-5 py-3 py-md-0">
+        <div className="row justify-content-between">
+          <div className="col-lg-5 py-3 py-md-0">
             <h2>
               Home of Gaming <br /> la référence Gaming à <br /> Quida
             </h2>
@@ -24,62 +28,62 @@ const Book = () => {
             </p>
           </div>
 
-          <div class="col-lg-5  py-3 py-md-0">
-            <div class="card">
+          <div className="col-lg-5  py-3 py-md-0">
+            <div className="card">
               <div
                 id="carouselExampleControls"
-                class="carousel slide"
+                className="carousel slide"
                 data-bs-ride="carousel"
               >
-                <div class="scrol carousel-inner">
-                  <div class=" carousel-item active">
+                <div className="scrol carousel-inner">
+                  <div className=" carousel-item active">
                     <img
-                      src="./images/img1.jpeg"
+                      src={Img1}
                       height="600"
-                      class="d-block w-100"
+                      className="d-block w-100"
                       alt="..."
                     />
                   </div>
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <img
-                      src="./images/img2.jpeg"
+                      src={Img2}
                       height="600"
-                      class="d-block w-100"
+                      className="d-block w-100"
                       alt="..."
                     />
                   </div>
-                  <div class="carousel-item">
+                  <div className="carousel-item">
                     <img
-                      src="./images/img3.jpeg"
+                      src={Img3}
                       height="600"
-                      class="d-block w-100"
+                      className="d-block w-100"
                       alt="..."
                     />
                   </div>
                 </div>
                 <button
-                  class="carousel-control-prev"
+                  className="carousel-control-prev"
                   type="button"
                   data-bs-target="#carouselExampleControls"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  class="carousel-control-next"
+                  className="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleControls"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
