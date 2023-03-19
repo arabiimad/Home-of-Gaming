@@ -1,3 +1,5 @@
+import Logo from "/img/logo.png"
+
 const NavBar = () => {
   return (
     <>
@@ -5,7 +7,7 @@ const NavBar = () => {
         <div className="container">
           <a className="navbar-brand" href="index.html" id="logo">
             <span>
-              <img src="./logo.png" alt="" width="100" />
+              <img src={Logo} alt="" width="100" />
             </span>
           </a>
           <button
