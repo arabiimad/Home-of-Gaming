@@ -5,7 +5,7 @@
 - git your clone of this repo from:
 
   ```bash
-  https://github.com/MeReda/House-of-Gaming.git
+  git clone https://github.com/MeReda/House-of-Gaming.git
   ```
 
 - then go to directory path
