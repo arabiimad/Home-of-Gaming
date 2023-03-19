@@ -1,6 +1,6 @@
 const Book = () => {
   return (
-    <section class="book" id="book">
+    <section class="book mt-5" id="book">
       <div class="container">
         <div class="main-text">
           <h1>
@@ -89,3 +89,5 @@ const Book = () => {
     </section>
   );
 };
+
+export default Book;
