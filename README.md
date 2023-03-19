@@ -1,5 +1,8 @@
 # Instructions
 
+## See online result
+https://home-of-gaming.netlify.app/
+
 ## Set Up
 
 - git your clone of this repo from:
