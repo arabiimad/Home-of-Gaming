@@ -5,13 +5,13 @@
 - git your clone of this repo from:
 
   ```bash
-  git clone https://github.com/MeReda/House-of-Gaming.git
+  git clone https://github.com/MeReda/Home-of-Gaming.git
   ```
 
 - then go to directory path
 
   ```bash
-  cd House-of-Gaming
+  cd Home-of-Gaming
   ```
 
 - install the packages
