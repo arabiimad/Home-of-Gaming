@@ -1,5 +1,4 @@
 import Img1 from "/img/img1.jpeg";
-import Img2 from "/img/img2.jpeg";
 import Img3 from "/img/img3.jpeg";
 
 const Book = () => {
@@ -7,9 +6,7 @@ const Book = () => {
     <section className="book mt-5" id="book">
       <div className="container">
         <div className="main-text">
-          <h1>
-            <span>S</span>UIVI DU STATU EL TEMPS REEL *{" "}
-          </h1>
+          <h1>SUIVI DU STATU EL TEMPS REEL</h1>
         </div>
 
         <div className="row justify-content-between">
@@ -40,15 +37,7 @@ const Book = () => {
                     <img
                       src={Img1}
                       height="600"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src={Img2}
-                      height="600"
-                      className="d-block w-100"
+                      className="d-block w-100 object-fit-cover"
                       alt="..."
                     />
                   </div>
@@ -56,7 +45,7 @@ const Book = () => {
                     <img
                       src={Img3}
                       height="600"
-                      className="d-block w-100"
+                      className="d-block w-100 object-fit-cover"
                       alt="..."
                     />
                   </div>
