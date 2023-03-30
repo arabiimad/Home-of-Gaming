@@ -1,62 +1,65 @@
-import Logo from "/img/logo.png"
+import Logo from "/img/logo.png";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "./index.scss";
 
 const NavBar = () => {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg" id="navbar">
-        <div className="container">
-          <a className="navbar-brand" href="index.html" id="logo">
-            <span>
-              <img src={Logo} alt="" width="100" />
-            </span>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mynavbar"
-          >
-            <span>
-              <i className="fa-solid fa-bars"></i>
-            </span>
-          </button>
-          <div className="collapse navbar-collapse" id="mynavbar">
-            <ul className="ul-1 navbar-nav me-auto">
-              <li className="nav-item">
-                <a className="nav-link active" href="index.html">
-                  {" "}
-                  ACCEUIL
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#book">
-                  BOOTCAMP
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#packages">
-                  RESERVATION
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#services">
-                  CONTACT
-                </a>
-              </li>
-            </ul>
+    <nav className="navbar navbar-expand-lg" id="navbar">
+      <div className="container">
+        <a className="navbar-brand" href="index.html" id="logo">
+          <span>
+            <img src={Logo} alt="" width="100" />
+          </span>
+        </a>
+        <button
+          className="navbar-toggler border-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span>
+            <FontAwesomeIcon icon={faBars} color="#ff1525" />
+          </span>
+        </button>
+        <div className="collapse navbar-collapse" id="mynavbar">
+          <ul className="ul-1 navbar-nav mx-auto">
+            <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/">
+                ACCEUIL
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/bootcamp">
+                BOOTCAMP
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/reservation">
+                RESERVATION
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link text-light" to="/contact">
+                CONTACT
+              </NavLink>
+            </li>
+          </ul>
 
-            <button type="button" className="btn btn-danger">
+          <NavLink to="/Sign">
+            <button
+              type="button"
+              className="btn btn-danger text-light"
+              data-mdb-toggle="modal"
+              data-mdb-target="#exampleModal"
+            >
               JE MABONNE
             </button>
-            <span className="user">
-              <a href="">
-                <img src="./user.png" width="30" alt="" />
-              </a>
-            </span>
-          </div>
+          </NavLink>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

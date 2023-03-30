@@ -4,11 +4,11 @@ import NavBar from "./NavBar";
 
 const Layout = () => {
   return (
-    <>
+    <div className="bg-dark text-light">
       <NavBar />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 

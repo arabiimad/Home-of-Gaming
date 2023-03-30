@@ -8,7 +8,7 @@ const Landing = () => {
         </h1>
       </div>
       <div className="video-container">
-        <video src="./vid.mp4" loop autoplay muted></video>
+        <video src="./vid.mp4" loop autoPlay muted></video>
       </div>
     </div>
   );
