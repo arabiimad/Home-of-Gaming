@@ -1,15 +1,57 @@
 import "./index.scss";
-
+import React, {useState} from "react";
 const Bootcamp = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [numOfPeople, setNumOfPeople] = useState(5);
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleFullNameChange = (event) => {
+    setFullName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleNumOfPeopleChange = (event) => {
+    setNumOfPeople(event.target.value);
+  };
+
+  const handleDateChange = (event) => {
+    setDate(event.target.value);
+  };
+
+  const handleTimeChange = (event) => {
+    setTime(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Code to handle form submission
+    console.log("Full Name:", fullName);
+    console.log("Email Address:", email);
+    console.log("Number of People:", numOfPeople);
+    console.log("Date:", date);
+    console.log("Time:", time);
+    console.log("Message:", message);
+  };
   return (
     <div className="container">
       <h1 className="m-5 text-center fw-bold">BOOTCAMP</h1>
       <div className="row my-5">
         <div className="col-md-6 bg-secondary p-5">
+        <br /> <br />
           <h3 className="text-primary fw-bold mb-3">EN QUOI ÇA CONSISTE ?</h3>
           <p className="lh-lg fw-light fs-5">
-            Home of Gaming propose la formule de <br /> bootcamp pour que vous
-            puissiez privatiser <br /> la salle et vous réunir afin de jouer ou
+            Home of Gaming propose la formule de  bootcamp pour que vous
+            puissiez privatiser la salle et vous réunir afin de jouer ou
             vous <br /> entraîner dans un cadre unique! <br />
           </p>
 
@@ -21,15 +63,12 @@ const Bootcamp = () => {
           </h5>
 
           <p className="lh-lg fw-light fs-5">
-            L'accès exclusif à l'HOG pour vous et vos amis
-            <br />
-            L'accès aux 10 PC haut de gamme & aux
-          </p>
-
-          <h5 className="lh-lg fs-4">2 salons consoles PS5</h5>
-          <p className="lh-lg fw-light fs-5">
-            • La possibilité de manger sur place sans <br /> rien prévoir
-            (livraison de snacks) <br />
+          • L'accès exclusif à l'HOG pour vous et vos amis
+            <br/>
+          • L'accès aux 10 PC haut de gamme & aux 2 salons consoles PS5
+          <br />
+          • La possibilité de manger sur place sans rien prévoir
+            (livraison de snacks).
           </p>
           <h3 className="text-primary fw-bold mb-3 mt-4">COMBIEN ÇA COÛTE ?</h3>
           <p className="lh-lg fw-light fs-5">Le tarif est de :</p>
@@ -49,76 +88,89 @@ const Bootcamp = () => {
         </div>
 
         <div className="col-md-5 ms-auto">
-          <form>
-            <div className="form-group my-5">
-              <label className="my-4 fs-3" htmlFor="nom">
-                Nom : <span className="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="nom"
-                placeholder="Entrez votre nom"
-              />
-            </div>
+        <form onSubmit={handleSubmit}>
+  <div className="form-group my-3">
+    <label htmlFor="fullName">Nom et prénom: <span className="text-danger">*</span></label>
+    <input
+      type="text"
+      className="form-control"
+      id="fullName"
+      value={fullName}
+      onChange={handleFullNameChange}
+      placeholder="Entrez votre nom et prénom"
+      required
+    />
+  </div>
 
-            <div className="form-group my-5">
-              <label className="my-4 fs-3" htmlFor="prenom">
-                Email Address : <span className="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="prenom"
-                placeholder="Entrez votre prénom"
-              />
-            </div>
+  <div className="form-group my-3">
+    <label htmlFor="email">Address Email: <span className="text-danger">*</span></label>
+    <input
+      type="email"
+      className="form-control"
+      id="email"
+      value={email}
+      onChange={handleEmailChange}
+      required
+      placeholder="Entrez votre adresse email"
+    />
+  </div>
 
-            <div className="form-group my-5">
-              <label className="my-4 fs-3" htmlFor="adresse">
-                Date : <span className="text-danger">*</span>
-              </label>
-              <input
-                type="date"
-                className="form-control"
-                id="adresse"
-                placeholder="Entrez votre adresse"
-              />
-            </div>
+  <div className="form-group my-3">
+    <label htmlFor="numOfPeople">Nombre de personnes:</label>
+    <input
+      type="range"
+      min="5"
+      max="15"
+      className="form-range"
+      id="numOfPeople"
+      value={numOfPeople}
+      onChange={handleNumOfPeopleChange}
+      required
+    />
+    <div>{numOfPeople} personnes</div>
+  </div>
 
-            <div className="form-group my-5">
-              <label className="my-4 fs-3" htmlFor="range">
-                Nombre de perssones : <span className="text-danger">*</span>
-              </label>
-              <div className="d-flex align-center justify-content-center">
-                <span className="me-3">5</span>
-                <input type="range" className="form-range" id="range" />
-              </div>
-            </div>
+  <div className="form-group my-3">
+    <label htmlFor="date">Date: <span className="text-danger">*</span></label>
+    <input
+      type="date"
+      className="form-control"
+      id="date"
+      value={date}
+      onChange={handleDateChange}
+      required
+    />
+  </div>
 
-            <div className="form-group my-5">
-              <label className="my-4 fs-3" htmlFor="message">
-                Message :
-              </label>
-              <textarea
-                className="form-control"
-                id="message"
-                placeholder="Entrez plus de detail"
-                rows="3"
-              ></textarea>
-            </div>
+  <div className="form-group my-3">
+    <label htmlFor="time">Heure: <span className="text-danger">*</span></label>
+    <input
+      type="time"
+      className="form-control"
+      id="time"
+      value={time}
+      onChange={handleTimeChange}
+      required
+    />
+  </div>
 
-            <button
-              type="submit"
-              className="btn btn-lg btn-danger text-light my-3 d-block mx-auto"
-            >
-              Soumettre
-            </button>
-          </form>
+  <div className="form-group my-3">
+    <label htmlFor="message">Message:</label>
+    <textarea
+      className="form-control"
+      id="message"
+      value={message}
+      onChange={handleMessageChange}
+    />
+  </div>
+
+  <button type="submit" className="btn btn-primary my-3">Submit</button>
+</form>
+
         </div>
       </div>
     </div>
   );
 };
 
-export default Bootcamp;
+export default Bootcamp;
