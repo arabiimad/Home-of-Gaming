@@ -1,3 +1,5 @@
+import vid from "/vids/vide.mp4"
+import "./index.scss"
 const Landing = () => {
   return (
     <div className="home">
@@ -8,7 +10,9 @@ const Landing = () => {
         </h1>
       </div>
       <div className="video-container">
-        <video src="./vid.mp4" loop autoPlay muted></video>
+        <video src={vid}  autoPlay muted loop>
+          
+        </video>
       </div>
     </div>
   );

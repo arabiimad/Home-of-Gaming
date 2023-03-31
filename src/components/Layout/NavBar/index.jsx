@@ -2,9 +2,13 @@ import Logo from "/img/logo.png";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
 import "./index.scss";
 
+
 const NavBar = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <nav className="navbar navbar-expand-lg" id="navbar">
       <div className="container">
@@ -47,16 +51,45 @@ const NavBar = () => {
             </li>
           </ul>
 
-          <NavLink to="/Sign">
+          <div>
             <button
               type="button"
               className="btn btn-danger text-light"
-              data-mdb-toggle="modal"
-              data-mdb-target="#exampleModal"
+              onClick={() => setShowPopup(true)}
             >
-              JE MABONNE
+              Se Connecter
             </button>
-          </NavLink>
+            <Modal show={showPopup} onHide={() => setShowPopup(false)}>
+  <Modal.Header closeButton>
+    <Modal.Title>Se Connecter</Modal.Title>
+  </Modal.Header>
+  <Modal.Body>
+    <form>
+      <div className="mb-3">
+        <label htmlFor="email" className="form-label">
+          Email
+        </label>
+        <input type="email" className="form-control" id="email" />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="password" className="form-label">
+          Mot de passe
+        </label>
+        <input type="password" className="form-control" id="password" />
+      </div>
+    </form>
+  </Modal.Body>
+  <Modal.Footer>
+    <Button variant="secondary" onClick={() => setShowPopup(false)}>
+      Annuler
+    </Button>
+    <Button variant="primary" onClick={() => console.log("Submitted!")}>
+      Se connecter
+    </Button>
+  </Modal.Footer>
+</Modal>
+
+          </div>
         </div>
       </div>
     </nav>
