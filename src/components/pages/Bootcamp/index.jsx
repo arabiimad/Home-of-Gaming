@@ -43,7 +43,7 @@ const Bootcamp = () => {
     console.log("Message:", message);
   };
   return (
-    <div className="container">
+    <div className="container" style={{ marginTop: "82px" }}>
       <h1 className="m-5 text-center fw-bold">BOOTCAMP</h1>
       <div className="row my-5">
         <div className="col-md-6 bg-secondary p-5">

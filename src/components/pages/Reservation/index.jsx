@@ -4,7 +4,7 @@ import './index.scss'
 const Tarif = () => {
   return (
     <>
-    <div className="container-fluid" >
+    <div className="container-fluid tarif-container" >
       <div className="row justify-content-between" style={{ marginTop: "50px" }}>
         <div className="col-lg-5">
         

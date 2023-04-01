@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="social-media ms-auto d-block">
               <h3>SUIS-NOUS:</h3>
               <ul className="list-unstyled">
-                <li><a href="#"><FaInstagram /> Home of Gaming</a></li>
+                <li><a href="https://www.instagram.com/home_of_gaming_48/"><FaInstagram /> Home of Gaming</a></li>
               </ul>
             </div>
           </Col>

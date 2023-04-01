@@ -2,9 +2,9 @@ import vid from "/vids/vide.mp4"
 import "./index.scss"
 const Landing = () => {
   return (
-    <div className="home">
+    <div className="home" style={{ marginTop: "82px" }}>
       <div className="content">
-        <h5>Welcome To Home Of Gaiming</h5>
+        <h5>Welcome To Home Of Gaming</h5>
         <h1>
           HOME OF GAMING <span className="changecontent"></span>
         </h1>
