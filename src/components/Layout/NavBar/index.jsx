@@ -30,29 +30,29 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="mynavbar">
           <ul className="ul-1 navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/">
+              <NavLink className="nav-link text-light nav-link-hover" to="/">
                 ACCEUIL
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/bootcamp">
+              <NavLink className="nav-link text-light nav-link-hover" to="/bootcamp">
                 BOOTCAMP
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/reservation">
+              <NavLink className="nav-link text-light nav-link-hover" to="/reservation">
                 RESERVATION
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/contact">
+              <NavLink className="nav-link text-light nav-link-hover" to="/contact">
                 CONTACT
               </NavLink>
             </li>
           </ul>
 
           <div>
-            <button
+            {/* <button
               type="button"
               className="btn btn-danger text-light btn-login"
               onClick={() => setShowPopup(true)}
@@ -87,7 +87,7 @@ const NavBar = () => {
                   Se connecter
                 </Button>
               </Modal.Footer>
-            </Modal>
+            </Modal> */}
 
           </div>
         </div>

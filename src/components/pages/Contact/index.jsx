@@ -26,7 +26,7 @@ const Contact = () => {
           <Card className="p-4 bg-secondary">
             <h2>SUIS-NOUS</h2>
             <p>
-              <FaInstagram /> @home_of_gaming_48
+               <a href="https://www.instagram.com/home_of_gaming_48/"><FaInstagram />@home_of_gaming_48</a> 
             </p>
           </Card>
         </Col>
