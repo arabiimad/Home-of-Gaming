@@ -4,8 +4,8 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaInstagram } from "react-icons/fa
 
 const Contact = () => {
   return (
-    <Container className="mt-3">
-      <Row>
+    <Container className="mt-3" style={{ marginTop: "80px", paddingTop: "80px" }}>
+      <Row className="mb-5" style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Col md={3}>
           <Card className="p-1 bg-secondary">
             <h2>RENDS NOUS VISITE</h2>
