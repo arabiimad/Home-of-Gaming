@@ -4,8 +4,8 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaInstagram } from "react-icons/fa
 
 const Contact = () => {
   return (
-    <Container className="mt-3">
-      <Row>
+    <Container className="mt-3" style={{ marginTop: "80px", paddingTop: "80px" }}>
+      <Row className="mb-5" style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Col md={3}>
           <Card className="p-1 bg-secondary">
             <h2>RENDS NOUS VISITE</h2>
@@ -26,7 +26,7 @@ const Contact = () => {
           <Card className="p-4 bg-secondary">
             <h2>SUIS-NOUS</h2>
             <p>
-              <FaInstagram /> @home_of_gaming_48
+               <a href="https://www.instagram.com/home_of_gaming_48/"><FaInstagram />@home_of_gaming_48</a> 
             </p>
           </Card>
         </Col>

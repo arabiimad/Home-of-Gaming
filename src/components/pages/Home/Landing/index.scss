@@ -35,29 +35,29 @@
   }
   .changecontent::after {
     content: " ";
-    color: #ffa500;
+    color: #ff0000;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear;
   }
 
   @keyframes changetext {
     0% {
-      content: "oujda";
+      content: "Oujda";
     }
     20% {
-      content: "-_-";
+      content: "Café Rihab";
     }
     40% {
-      content: "*/*";
+      content: "6eme étage";
     }
     60% {
       content: "";
     }
     80% {
-      content: "Caffe rihab";
+      content: "Café Rihab";
     }
     100%{
-        content:"(*)-_-(*)"
+        content:"6eme étage"
     }
 
   }

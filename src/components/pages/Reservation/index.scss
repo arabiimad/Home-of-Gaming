@@ -87,11 +87,7 @@ a:hover,a:focus{
     text-decoration: none !important; 
     color: inherit !important;
 }
-ul{
-    margin: 0px; 
-    padding: 0px; 
-    list-style: none;
-}
+
 .relative{ 
     position: relative;
 }
@@ -226,5 +222,9 @@ ul{
   background-color:#212121;
   padding:10px 0px;
   color:#FFF;
+}
+
+.tarif-container {
+  margin-top: 70px;
 }
 

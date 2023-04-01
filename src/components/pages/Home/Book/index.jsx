@@ -6,21 +6,17 @@ const Book = () => {
     <section className="book mt-5" id="book">
       <div className="container">
         <div className="main-text">
-          <h1>SUIVI DU STATU EL TEMPS REEL</h1>
+          <h1>Home of Gaming</h1>
         </div>
 
         <div className="row justify-content-between">
           <div className="col-lg-5 py-3 py-md-0">
-            <h2>
-              Home of Gaming <br /> la référence Gaming à <br /> Quida
-            </h2>
+            <h2>la référence Gaming à Oujda</h2><br />
             <p>
-              Viens seul ou avec les amis et profites de <br /> Jouer aux leux
-              du moment dans un cadre <br /> convivial et vis une expérience
-              unique <br /> dans la région !
-            </p>
+              Viens seul ou avec les amis et profites de jouer aux jeux du moment dans un cadre convivial et vis une expérience unique dans la région !
+            </p> <br />
             <p>
-              Tu t'ennuies chez toi, t'as du temps de <br /> ilibre ? Passe
+              Tu t'ennuies chez toi, t'as du temps de libre ? Passe
               faire un tour !
             </p>
           </div>
@@ -41,7 +37,7 @@ const Book = () => {
                       alt="..."
                     />
                   </div>
-                  <div className="carousel-item">
+                  <div className="carousel-item ">
                     <img
                       src={Img3}
                       height="600"
