@@ -1,6 +1,21 @@
+import { useEffect, useState } from "react";
 import "./index.scss";
+import Loader from "../../Loader";
 
 const Bootcamp = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <div className="container">
       <h1 className="m-5 text-center fw-bold">BOOTCAMP</h1>
