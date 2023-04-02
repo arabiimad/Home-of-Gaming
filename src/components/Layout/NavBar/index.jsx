@@ -2,11 +2,15 @@ import Logo from "/img/logo.png";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
 import "./index.scss";
 
+
 const NavBar = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
-    <nav className="navbar navbar-expand-lg" id="navbar">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
       <div className="container">
         <a className="navbar-brand" href="index.html" id="logo">
           <span>
@@ -26,37 +30,66 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="mynavbar">
           <ul className="ul-1 navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/">
+              <NavLink className="nav-link text-light nav-link-hover" to="/">
                 ACCEUIL
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/bootcamp">
+              <NavLink className="nav-link text-light nav-link-hover" to="/bootcamp">
                 BOOTCAMP
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/reservation">
+              <NavLink className="nav-link text-light nav-link-hover" to="/reservation">
                 RESERVATION
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-light" to="/contact">
+              <NavLink className="nav-link text-light nav-link-hover" to="/contact">
                 CONTACT
               </NavLink>
             </li>
           </ul>
 
-          <NavLink to="/Sign">
-            <button
+          <div>
+            {/* <button
               type="button"
-              className="btn btn-danger text-light"
-              data-mdb-toggle="modal"
-              data-mdb-target="#exampleModal"
+              className="btn btn-danger text-light btn-login"
+              onClick={() => setShowPopup(true)}
             >
-              JE MABONNE
+              Se Connecter
             </button>
-          </NavLink>
+            <Modal show={showPopup} onHide={() => setShowPopup(false)}>
+              <Modal.Header closeButton>
+                <Modal.Title>Se Connecter</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                      Email
+                    </label>
+                    <input type="email" className="form-control" id="email" />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="password" className="form-label">
+                      Mot de passe
+                    </label>
+                    <input type="password" className="form-control" id="password" />
+                  </div>
+                </form>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={() => setShowPopup(false)}>
+                  Annuler
+                </Button>
+                <Button variant="primary" onClick={() => console.log("Submitted!")}>
+                  Se connecter
+                </Button>
+              </Modal.Footer>
+            </Modal> */}
+
+          </div>
         </div>
       </div>
     </nav>
