@@ -4,7 +4,6 @@ import Loader from "../../Loader";
 
 const Bootcamp = () => {
   const [isLoading, setIsLoading] = useState(false);
-
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {

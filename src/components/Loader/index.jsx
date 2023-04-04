@@ -57,7 +57,7 @@ const Loader = () => {
           strokeWidth="3"
         />
       </svg>
-      <h1>Loading ...</h1>
+      <h1>Chargement ...</h1>
     </div>
   );
 };

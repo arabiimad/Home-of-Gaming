@@ -28,6 +28,7 @@ const Contact = () => {
       className="mt-3"
       style={{ marginTop: "80px", paddingTop: "80px" }}
     >
+      <h1 className="m-5 text-center fw-bold">CONTACT</h1>
       <Row
         className="mb-5"
         style={{ display: "flex", justifyContent: "space-between" }}
@@ -63,14 +64,14 @@ const Contact = () => {
           <Card className="p-4 bg-secondary">
             <h2>CONTACTE NOUS</h2>
             <p>
-              <FaEnvelope /> homeofgamiing@gmail.com
+              <FaEnvelope /> <a href="mailto:homeofgamiing@gmail.com">homeofgamiing@gmail.com</a> 
             </p>
           </Card>
         </Col>
       </Row>
       <Row className="mb-5">
-        <Col md={12}>
-          <h2 className="local">Trouvez Nous :</h2>
+        <Col md={12}> <br /><br /><br />
+          <h2 className="local">Trouvez Nous :</h2> 
           <Card>
             <iframe
               title="Our Location"
@@ -83,7 +84,7 @@ const Contact = () => {
             ></iframe>
           </Card>
         </Col>
-      </Row>
+      </Row> <br /><br /><br />
     </Container>
   );
 };

@@ -1,5 +1,8 @@
 .footer {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
   .subscription {
+    margin-bottom: -1rem;
     h3 {
       color: #fff;
       margin-bottom: 1rem;
@@ -38,6 +41,7 @@
   }
 
   .social-media {
+    margin-bottom: 2rem;
     h3 {
       color: #fff;
       margin-bottom: 1rem;
@@ -65,8 +69,43 @@
   }
 
   .logo {
+    margin-bottom: 1rem;
     img {
       height: 50px;
       width: auto;
     }
-  }}
+  }
+  .social-media li a svg {
+    font-size: 2rem; /* adjust the size as desired */
+  }
+  @media only screen and (max-width: 768px) {
+    .subscription {
+      margin-bottom: 2rem;
+    }
+  
+    .social-media {
+      text-align: center;
+      
+    }
+  
+    .footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .subscription {
+      text-align: center;
+    }
+  
+    .social-media {
+      margin-top: 2rem;
+      
+    }
+  }
+  
+}
+#footerr{
+  font-family: serif;
+} 
