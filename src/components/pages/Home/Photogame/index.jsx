@@ -19,76 +19,76 @@ const Photogames =()=>
 
 
 
-<section class="servicess" id="servicess">
-    <div class="container-lg">
+<section className="servicess" id="servicess">
+    <div className="container-lg">
 
-      <div class="main-txt ic-text">
+      <div className="main-txt ic-text">
         <h1> Jouer à tous les meilleurs jeux multi-joueus du moment</h1>
       </div>
-      <div class="row" style={{marginTop: '30px'}}>
-            <div class="col-lg-3 py-3 py-md-0">
-              <div class="cardd">
+      <div className="row" style={{marginTop: '30px'}}>
+            <div className="col-lg-3 py-3 py-md-0">
+              <div className="cardd">
                 <img src={pht} width="300" alt=""/>
               </div>
             </div>
-            <div class="col-lg-3 py-3 py-md-0">
-              <div class="cardd">
+            <div className="col-lg-3 py-3 py-md-0">
+              <div className="cardd">
                 <img src={pht1} width="300" alt=""/>
               </div>
             </div>
-            <div class="col-lg-3 py-3 py-md-0">
-              <div class="cardd">
+            <div className="col-lg-3 py-3 py-md-0">
+              <div className="cardd">
                 <img src={pht2} width="300" alt=""/>
               </div>
             </div>
-            <div class="col-lg-3 py-3 py-md-0">
-              <div class="cardd">
+            <div className="col-lg-3 py-3 py-md-0">
+              <div className="cardd">
               <img src={pht3} width="300" alt=""/>
               </div>
             </div>
             </div>
-            <div class="row" style={{marginTop: '30px'}}>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+            <div className="row" style={{marginTop: '30px'}}>
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
     <img src={pht4} width="300" alt=""/>
   </div>
 </div>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
     <img src={pht5} width="300" alt=""/>
   </div>
 </div>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
     <img src={pht6} width="300" alt=""/>
   </div>
 </div>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
   <img src={pht7} width="300" alt=""/>
   </div>
 </div>
 </div>
-<div class="row" style={{marginTop: '30px'}}>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+<div className="row" style={{marginTop: '30px'}}>
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
     <img src={pht8} width="300" alt=""/>
   </div>
 </div>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
     <img src={pht9} width="300" alt=""/>
   </div>
 </div>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd">
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd">
     <img src={pht10} width="300" alt=""/>
   </div>
 </div>
-<div class="col-lg-3 py-3 py-md-0">
-  <div class="cardd ">
-  <div class="card-body">
-      <h5 class="card-title"> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> Et pleins de nouveautés prochainement…</h5>
+<div className="col-lg-3 py-3 py-md-0">
+  <div className="cardd ">
+  <div className="card-body">
+      <h5 className="card-title"> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> Et pleins de nouveautés prochainement…</h5>
     </div>
    
   </div>
