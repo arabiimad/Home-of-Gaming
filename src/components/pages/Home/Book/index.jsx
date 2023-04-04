@@ -1,3 +1,4 @@
+import './Book.scss';
 import Img1 from "/img/img1.jpeg";
 import Img3 from "/img/img3.jpeg";
 
@@ -8,7 +9,7 @@ const Book = () => {
         <div className="main-text">
           <h1>Home of Gaming</h1>
         </div>
-
+        <br />
         <div className="row justify-content-between">
           <div className="col-lg-5 py-3 py-md-0">
             <h2>la référence Gaming à Oujda</h2><br />
@@ -22,7 +23,7 @@ const Book = () => {
           </div>
 
           <div className="col-lg-5  py-3 py-md-0">
-            <div className="card">
+            <div className="cardphoto">
               <div
                 id="carouselExampleControls"
                 className="carousel slide"

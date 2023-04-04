@@ -6,9 +6,9 @@ import {FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-primary text-white py-5">
+    <footer className="footer bg-primary text-white py-3">
       <Container>
-        <Row className="mt-4">
+        <Row>
           <Col md={4}>
             <div className="subscription">
               <h2>Reste connecté !</h2>
@@ -23,7 +23,7 @@ const Footer = () => {
               </Form>
             </div>
           </Col>
-          <Col md={4} className="ms-auto" >
+          <Col md={4} className="ms-auto">
             <div className="social-media ms-auto d-block">
               <h3>SUIS-NOUS:</h3>
               <ul className="list-unstyled">
@@ -32,13 +32,13 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <hr className="mt-4 mb-3" />
-        <Row className="mt-4 align-items-center d-flex justify-content-center" >
+        <hr />
+        <Row className="align-items-center d-flex justify-content-center">
           <Col md={1} className="text-center align-self-center">
-            <img src={Logo} alt="" width="65" />
+            <img src={Logo} alt="" width="50" />
           </Col>
           <Col md={4} className="text-center align-self-center">
-            <p>&copy; {new Date().getFullYear()} Home of Gaming. All rights reserved.</p>
+            <p id='footerr' style={{fontSize: '14px', lineHeight: '1.5'}}>&copy; {new Date().getFullYear()} Home of Gaming. All rights reserved.</p>
           </Col>
         </Row>
       </Container>

@@ -4,9 +4,9 @@ const Landing = () => {
   return (
     <div className="home" style={{ marginTop: "82px" }}>
       <div className="content">
-        <h5>Welcome To Home Of Gaming</h5>
+        <h5>Welcome To </h5>
         <h1>
-          HOME OF GAMING <span className="changecontent"></span>
+          HOME OF GAMING <br /><span className="changecontent"></span>
         </h1>
       </div>
       <div className="video-container">
