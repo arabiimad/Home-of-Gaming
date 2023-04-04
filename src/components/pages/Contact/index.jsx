@@ -1,11 +1,38 @@
+import { useEffect, useState } from "react";
 import "./index.scss";
-import {Container, Row, Col, Card } from "react-bootstrap";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+  FaInstagram,
+} from "react-icons/fa";
+import Loader from "../../Loader";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
-    <Container className="mt-3" style={{ marginTop: "80px", paddingTop: "80px" }}>
-      <Row className="mb-5" style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Container
+      className="mt-3"
+      style={{ marginTop: "80px", paddingTop: "80px" }}
+    >
+      <h1 className="m-5 text-center fw-bold">CONTACT</h1>
+      <Row
+        className="mb-5"
+        style={{ display: "flex", justifyContent: "space-between" }}
+      >
         <Col md={3}>
           <Card className="p-1 bg-secondary">
             <h2>RENDS NOUS VISITE</h2>
@@ -26,7 +53,10 @@ const Contact = () => {
           <Card className="p-4 bg-secondary">
             <h2>SUIS-NOUS</h2>
             <p>
-               <a href="https://www.instagram.com/home_of_gaming_48/"><FaInstagram />@home_of_gaming_48</a> 
+              <a href="https://www.instagram.com/home_of_gaming_48/">
+                <FaInstagram />
+                @home_of_gaming_48
+              </a>
             </p>
           </Card>
         </Col>
@@ -34,14 +64,14 @@ const Contact = () => {
           <Card className="p-4 bg-secondary">
             <h2>CONTACTE NOUS</h2>
             <p>
-              <FaEnvelope /> homeofgamiing@gmail.com
+              <FaEnvelope /> <a href="mailto:homeofgamiing@gmail.com">homeofgamiing@gmail.com</a> 
             </p>
           </Card>
         </Col>
       </Row>
       <Row className="mb-5">
-        <Col md={12}>
-          <h2 className="local">Trouvez Nous :</h2>
+        <Col md={12}> <br /><br /><br />
+          <h2 className="local">Trouvez Nous :</h2> 
           <Card>
             <iframe
               title="Our Location"
@@ -54,7 +84,7 @@ const Contact = () => {
             ></iframe>
           </Card>
         </Col>
-      </Row>
+      </Row> <br /><br /><br />
     </Container>
   );
 };
