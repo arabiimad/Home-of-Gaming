@@ -18,92 +18,106 @@ const Materiels = () => {
           </h1>
         </div>
         <div className="row" style={{ marginTop: "30px" }}>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3">
             <div className="card">
               <div className="card-body">
                 <img src={ic} alt="" />
-                <p className="materiel"> <br />
-                  Moniteur gaming ViewSonic 27 Curved FHD (1920X1080), 240 Hz , 1ms
+                <p className="materiel">
+                  {" "}
+                  <br />
+                  Moniteur gaming ViewSonic 27 Curved FHD (1920X1080), 240 Hz ,
+                  1ms
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic1} alt="" />
-                <p className="materiel"> <br />
+                <p className="materiel">
+                  {" "}
+                  <br />
                   Souris Mars Gaming
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic2} alt="" />
-                <p className="materiel"> <br />
-                Manette type PlayStation
+                <p className="materiel">
+                  {" "}
+                  <br />
+                  Manette type PlayStation
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic3} alt="" className="img-clv" />
-                <p className="materiel"> <br />
+                <p className="materiel">
+                  {" "}
+                  <br />
                   Clavier Mars Gaming
                 </p>
               </div>
             </div>
           </div>
-        </div>
-        <div className="row" style={{ marginTop: "30px" }}>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic4} alt="" />
-                <p className="materiel"><br />
-                GeForce RTX 3050
+                <p className="materiel">
+                  <br />
+                  GeForce RTX 3050
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic5} alt="" />
-                <p className="materiel"> <br />
+                <p className="materiel">
+                  {" "}
+                  <br />
                   Ryzen 5 5500
-                  </p>
+                </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic6} alt="" />
-                <p className="materiel"> <br />
+                <p className="materiel">
+                  {" "}
+                  <br />
                   Casque Mars Gaming
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 py-3 py-md-0">
+          <div className="col-md-6 col-lg-3 py-3 ">
             <div className="card">
               <div className="card-body">
                 <img src={ic7} alt="" />
-                <p className="materiel"> <br />
+                <p className="materiel">
+                  {" "}
+                  <br />
                   Fauteuil Gaming Spirit of Gamer
                 </p>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       </div>
     </section>
-);
+  );
 };
 
 export default Materiels;
