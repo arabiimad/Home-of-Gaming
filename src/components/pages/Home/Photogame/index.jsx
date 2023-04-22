@@ -9,76 +9,43 @@ import pht7 from "/games-images/Rectangle 18.svg";
 import pht8 from "/games-images/Rectangle 19.svg";
 import pht9 from "/games-images/Rectangle 21.svg";
 import pht10 from "/games-images/Rectangle 22.svg";
-import pht11 from "/games-images/Overwatch_cover_art.jpg";
 import "./index.scss";
 
 const Photogames = () => {
+  const myImages = [
+    pht,
+    pht1,
+    pht2,
+    pht3,
+    pht4,
+    pht5,
+    pht6,
+    pht7,
+    pht8,
+    pht9,
+    pht10,
+  ];
+
   return (
     <section className="servicess" id="servicess">
       <div className="container-lg">
         <div className="main-txt ic-text">
           <h1> Jouer à tous les meilleurs jeux multi-joueus du moment</h1>
         </div>
-        <div className="row" style={{ marginTop: "30px" }}>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht} width="300" alt="" />
+
+        <div className="row text-center">
+          {myImages.map((image, index) => (
+            <div className="col-12 col-lg-4 py-3 " key={index}>
+              <div className="cardd">
+                <img src={image} width="300" alt="" />
+              </div>
             </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht1} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht2} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht3} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht4} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht5} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht6} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht7} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht8} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht9} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
-            <div className="cardd">
-              <img src={pht10} width="300" alt="" />
-            </div>
-          </div>
-          <div className="col-6 col-lg-4 py-3 ">
+          ))}
+
+          <div className="col-12 col-lg-4 py-3">
             <div className="cardd h-100">
               <div className="card-body h-100">
-                <h5 className="card-title h-100 img-placeholder">
+                <h5 className="card-title fs-6 p-5 h-100 img-placeholder mx-auto">
                   <span>Et pleins de nouveautés prochainement…</span>
                 </h5>
               </div>
