@@ -105,6 +105,9 @@ const Bootcamp = () => {
               <label htmlFor="fullName">
                 Nom et prénom: <span className="text-danger">*</span>
               </label>
+            </div>
+
+            <div>
               <input
                 type="text"
                 className="form-control"
@@ -115,11 +118,15 @@ const Bootcamp = () => {
                 required
               />
             </div>
+            <br />
 
             <div className="form-group my-3">
               <label htmlFor="email">
                 Address Email: <span className="text-danger">*</span>
               </label>
+            </div>
+
+            <div>
               <input
                 type="email"
                 className="form-control"
@@ -130,9 +137,13 @@ const Bootcamp = () => {
                 placeholder="Entrez votre adresse email"
               />
             </div>
+            <br />
 
             <div className="form-group my-3">
               <label htmlFor="numOfPeople">Nombre de personnes:</label>
+            </div>
+
+            <div>
               <input
                 type="range"
                 min="5"
@@ -145,11 +156,14 @@ const Bootcamp = () => {
               />
               <div>{numOfPeople} personnes</div>
             </div>
+            <br />
 
             <div className="form-group my-3">
               <label htmlFor="date">
                 Date: <span className="text-danger">*</span>
               </label>
+            </div>
+            <div>
               <input
                 type="date"
                 className="form-control"
@@ -159,11 +173,14 @@ const Bootcamp = () => {
                 required
               />
             </div>
+            <br />
 
             <div className="form-group my-3">
               <label htmlFor="time">
                 Heure: <span className="text-danger">*</span>
               </label>
+            </div>
+            <div>
               <input
                 type="time"
                 className="form-control"
@@ -173,9 +190,12 @@ const Bootcamp = () => {
                 required
               />
             </div>
+            <br />
 
             <div className="form-group my-3">
               <label htmlFor="message">Message:</label>
+            </div>
+            <div>
               <textarea
                 className="form-control"
                 id="message"
@@ -183,10 +203,13 @@ const Bootcamp = () => {
                 onChange={handleMessageChange}
               />
             </div>
+            <br />
 
-            <button type="submit" className="btn btn-primary my-3">
-              Submit
-            </button>
+            <div className="text-center">
+  <button type="submit" className="btn btn-primary my-3">
+    Submit
+  </button>
+</div>
           </form>
         </div>
       </div>
