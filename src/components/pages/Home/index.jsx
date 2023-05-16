@@ -3,8 +3,9 @@ import Book from "./Book";
 import Landing from "./Landing";
 import Loader from "../../Loader";
 import Materiels from "./materiels/materiel";
-import Photogames from "./Photogame"
+import Photogames from "./Photogame";
 import Hbc from "./homebc";
+import Posts from "./Posts";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -24,9 +25,10 @@ const Home = () => {
   return (
     <>
       <Landing />
+      <Posts />
       <Book />
-      <Materiels/>
-      <Photogames/>
+      <Materiels />
+      <Photogames />
       <Hbc />
     </>
   );
