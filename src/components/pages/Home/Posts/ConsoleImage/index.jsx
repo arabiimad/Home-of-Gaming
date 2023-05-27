@@ -5,9 +5,9 @@ const ConsoleImage = ({ reserved }) => {
   return (
     <div>
       {reserved ? (
-        <img src={reservedConsole} alt="reserved" />
+        <img className="img-fluid" src={reservedConsole} alt="reserved" />
       ) : (
-        <img src={freeConsole} alt="free" />
+        <img className="img-fluid" src={freeConsole} alt="free" />
       )}
     </div>
   );
