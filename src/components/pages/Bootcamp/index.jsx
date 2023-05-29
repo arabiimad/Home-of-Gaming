@@ -31,7 +31,16 @@ const Bootcamp = () => {
   };
 
   const handleDateChange = (event) => {
-    setDate(event.target.value);
+    const enteredDate = new Date(event.target.value);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset hours, minutes, seconds and ms
+  
+    if (enteredDate >= today) {
+      setDate(event.target.value);
+    } else {
+      alert("Vous pouvez pas choisir une date ancienne!");
+      setDate(""); // Clear the field
+    }
   };
 
   const handleTimeChange = (event) => {
@@ -131,20 +140,7 @@ const Bootcamp = () => {
               />
             </div>
 
-            <div className="form-group my-3">
-              <label htmlFor="numOfPeople">Nombre de personnes:</label>
-              <input
-                type="range"
-                min="5"
-                max="15"
-                className="form-range"
-                id="numOfPeople"
-                value={numOfPeople}
-                onChange={handleNumOfPeopleChange}
-                required
-              />
-              <div>{numOfPeople} personnes</div>
-            </div>
+            
 
             <div className="form-group my-3">
               <label htmlFor="date">
@@ -175,6 +171,21 @@ const Bootcamp = () => {
             </div>
 
             <div className="form-group my-3">
+              <label htmlFor="numOfPeople">Nombre de personnes:</label>
+              <input
+                type="range"
+                min="5"
+                max="15"
+                className="form-range"
+                id="numOfPeople"
+                value={numOfPeople}
+                onChange={handleNumOfPeopleChange}
+                required
+              />
+              <div>{numOfPeople} personnes</div>
+            </div>
+
+            <div className="form-group my-3">
               <label htmlFor="message">Message:</label>
               <textarea
                 className="form-control"
@@ -184,8 +195,8 @@ const Bootcamp = () => {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary my-3">
-              Submit
+            <button type="submit">
+              Envoyer
             </button>
           </form>
         </div>

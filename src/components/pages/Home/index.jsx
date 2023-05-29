@@ -5,6 +5,7 @@ import Loader from "../../Loader";
 import Materiels from "./materiels/materiel";
 import Photogames from "./Photogame"
 import Hbc from "./homebc";
+import CardContainer from "./offres";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -28,6 +29,7 @@ const Home = () => {
       <Materiels/>
       <Photogames/>
       <Hbc />
+      <CardContainer />
     </>
   );
 };

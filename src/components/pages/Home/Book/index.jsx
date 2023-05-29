@@ -1,4 +1,4 @@
-import './Book.scss';
+import './book.scss';
 import Img1 from "/img/img1.jpeg";
 import Img3 from "/img/img3.jpeg";
 
@@ -13,10 +13,10 @@ const Book = () => {
         <div className="row justify-content-between">
           <div className="col-lg-5 py-3 py-md-0">
             <h2>la référence Gaming à Oujda</h2><br />
-            <p>
+            <p className='fnt'>
               Viens seul ou avec les amis et profites de jouer aux jeux du moment dans un cadre convivial et vis une expérience unique dans la région !
             </p> <br />
-            <p>
+            <p className='fnt'>
               Tu t'ennuies chez toi, t'as du temps de libre ? Passe
               faire un tour !
             </p>
