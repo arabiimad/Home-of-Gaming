@@ -27,7 +27,7 @@ const Contact = () => {
     <Container className="mt-3 contact-container">
       <h1 className="m-5 text-center fw-bold">CONTACT</h1>
       <Row className="mb-5 contact-row">
-        <Col md={3} className="contact-col">
+        <Col xs={12} sm={6} md={6} lg={3} className="contact-col">
           <Card className="p-3 bg-secondary contact-card">
             <h2>RENDS-NOUS VISITE</h2>
             <p>
@@ -35,26 +35,26 @@ const Contact = () => {
             </p>
           </Card>
         </Col>
-        <Col md={3} className="contact-col">
+        <Col xs={12} sm={6} md={6} lg={3} className="contact-col">
           <Card className="p-3 bg-secondary contact-card">
-            <h2>APPELEZ-NOUS</h2> <br />
-            <p>
+            <h2>APPELEZ-NOUS</h2>
+            <a href="tel: +212 704-338109">
+            <p> <br />
               <FaPhone /> +212 704-338109
-            </p>
+            </p></a>
           </Card>
         </Col>
-        <Col md={3} className="contact-col">
+        <Col xs={12} sm={6} md={6} lg={3} className="contact-col">
           <Card className="p-3 bg-secondary contact-card">
             <h2>SUIS-NOUS</h2>
-            <p>
-              <a href="https://www.instagram.com/home_of_gaming_48/"><br />
+            <p> <br />
+              <a href="https://www.instagram.com/home_of_gaming_48/">
                 <FaInstagram /> home_of_gaming_48
-                
               </a>
             </p>
           </Card>
         </Col>
-        <Col md={3} className="contact-col">
+        <Col xs={12} sm={6} md={6} lg={3} className="contact-col">
           <Card className="p-3 bg-secondary contact-card">
             <h2>CONTACTEZ-NOUS</h2>
             <p>
@@ -62,10 +62,10 @@ const Contact = () => {
             </p>
           </Card>
         </Col>
-
       </Row>
       <Row className="mb-5">
-        <Col md={12}> <br /><br /><br />
+        <Col md={12}>
+          <br /><br /><br />
           <h2 className="local">Trouvez Nous :</h2> 
           <Card>
             <iframe
