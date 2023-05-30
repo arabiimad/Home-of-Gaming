@@ -162,6 +162,21 @@ const Bootcamp = () => {
             </div>
 
             <div className="form-group my-3">
+              <label htmlFor="numOfPeople">Nombre de personnes:</label>
+              <input
+                type="range"
+                min="5"
+                max="15"
+                className="form-range"
+                id="numOfPeople"
+                value={numOfPeople}
+                onChange={handleNumOfPeopleChange}
+                required
+              />
+              <div>{numOfPeople} personnes</div>
+            </div>
+
+            <div className="form-group my-3">
               <label htmlFor="message">Message:</label>
               <textarea name="message" className="form-control" id="message" />
             </div>

@@ -7,6 +7,7 @@ import { Modal, Button } from "react-bootstrap";
 import "./index.scss";
 
 
+
 const NavBar = () => {
   const [showPopup, setShowPopup] = useState(false);
   return (
