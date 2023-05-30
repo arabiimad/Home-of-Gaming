@@ -8,7 +8,7 @@
 
 body{ 
     background-color:#f0f3f6;
-  overflow-x: hidden;
+    overflow-x: hidden;
 
 }
 h1,h2,h3,h4,h5,h6,div,input,p,a{
@@ -21,7 +21,7 @@ h3{
 }
 .container-fluid,.container { 
     margin:auto;
-  padding:0px 15px;
+  padding:0px 10px;
   max-width:1200px;
 }
 label{
@@ -88,143 +88,68 @@ a:hover,a:focus{
     color: inherit !important;
 }
 
-.relative{ 
-    position: relative;
-}
-.absolute{ 
-    position: absolute;
-}
-.fixed{ 
-    position: fixed;
-}
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 
-.pricing-table-container{
-  padding:50px 0px;
-}
-.description{
-  padding:15px 0px;
-}
-.description a{
-  padding:10px;
-  font-size:13px;
-  display:block;
-  font-weight:bold;
-  border-bottom:1px solid #DDD;
-}
-.description a.active{
-  background-color:#ffffff;
-  padding-left:25px;
-  
-}
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 500px;
+        margin: 2rem 0;
+        padding: 2rem;
+        border-radius: 8px;
+        ;
+        box-shadow: 0px 0px 10px rgba(255, 128, 128, 0.1);
 
-.pricing-table-3{
-  background-color:#FFF;
-  margin:15px auto;
-  box-shadow:0px 0px 25px rgba(0,0,0,0.1);
-  max-width:300px;
-  border-radius:0px 10px 0px 10px;
-  overflow:hidden;
-  position:relative;
-  min-height:250px;
-  transition:all ease-in-out 0.25s;
-}
-.pricing-table-3:hover{
-  transform:scale(1.1,1.1);
-  cursor:pointer;
-}
+        input {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 1rem;
+        }
 
-.pricing-table-3.basic .price{
-  background-color:#28b6f6;
-  color:#FFF;
+        button {
+          padding: 17px 40px;
+          ;
+          border: 0;
+          background-color:#0465e3;
+          box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          font-size: 15px;
+          transition: all .5s ease;
+         }
+         
+         button:hover {
+          letter-spacing: 3px;
+          background-color:#ff0606af;
+          color: hsl(0, 0%, 100%);
+          box-shadow: rgb(138, 0, 0) 0px 7px 29px 0px;
+         }
+         
+         button:active {
+          letter-spacing: 3px;
+          background-color: hsl(147, 50%, 47%);
+          color: hsl(0, 0%, 100%);
+          box-shadow: rgb(0 153 0) 0px 7px 29px 0px;
+          transform: translateY(10px);
+          transition: 100ms;
+         }
+    }
 }
-.pricing-table-3.premium .price{
-  background-color:#ff9f00;
-  color:#FFF;
+@media (min-width: 992px) {
+  .tarif-container, .reservation-container {
+    width: 50%;
+    float: left;
+  }
 }
-.pricing-table-3.business .price{
-  background-color:#c3185c;
-  color:#FFF;
-}
-
-.pricing-table-3 .pricing-table-header{
-  background-color:#212121;
-  color:#FFF;
-  padding:20px 0px 0px 20px;
-  position:absolute;
-  z-index:5;
-}
-.pricing-table-3 .pricing-table-header p{
-  font-size:12px;
-  opacity:0.7;
-}
-.pricing-table-3 .pricing-table-header::before{
-  content:"";
-  position:absolute;
-  left:-50px;
-  right:-180px;
-  height:125px;
-  top:-50px;
-  background-color:#212121;
-  z-index:-1;
-  transform:rotate(-20deg)
-}
-
-.pricing-table-3 .price{
-  position:absolute;
-  top:0px;
-  text-align:right;
-  padding:110px 20px 0px 0px;
-  right:0px;
-  left:0px;
-  font-size:20px;
-  z-index:4;
-}
-.pricing-table-3 .price::before{
-  content:"";
-  position:absolute;
-  left:0px;
-  right:0px;
-  height:100px;
-  bottom:-25px;
-  background-color:inherit;
-  transform:skewY(10deg);
-  z-index:-1;
-  box-shadow:0px 5px 0px 5px rgba(0,0,0,0.05);
-}
-
-
-.pricing-table-3 .pricing-body{
-  padding:20px;
-  padding-top:200px;  
-}
-.pricing-table-3 .pricing-table-ul li{
-  color:rgba(0,0,0,0.7);
-  font-size:13px;
-  padding:10px;
-  border-bottom:1px solid rgba(0,0,0,0.1);
-}
-.pricing-table-3 .pricing-table-ul .fa{
-  margin-right:10px;
-}
-.pricing-table-3.basic .pricing-table-ul .fa{
-  color:#28b6f6;
-}
-.pricing-table-3.premium .pricing-table-ul .fa{
-  color:#ff9f00;
-}
-.pricing-table-3.business .pricing-table-ul .fa{
-  color:#c3185c;
-}
-.pricing-table-3 .view-more{
-  margin:10px 20px;
-  display:block;
-  text-align:center;
-  background-color:#212121;
-  padding:10px 0px;
-  color:#FFF;
-}
-
-.tarif-container {
-  margin-top: 70px;
-}
-

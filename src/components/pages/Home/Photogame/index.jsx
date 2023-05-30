@@ -36,16 +36,16 @@ const Photogames = () => {
         <div className="row text-center">
           {myImages.map((image, index) => (
             <div className="col-12 col-lg-4 py-3 " key={index}>
-              <div className="cardd">
+              <div className="carddd">
                 <img src={image} width="300" alt="" />
               </div>
             </div>
           ))}
 
           <div className="col-12 col-lg-4 py-3">
-            <div className="cardd h-100">
-              <div className="card-body h-100">
-                <h5 className="card-title fs-6 p-5 h-100 img-placeholder mx-auto">
+            <div className="carddd h-100">
+              <div className="carddd-body h-100">
+                <h5 className="carddd-title fs-6 p-5 h-100 img-placeholder mx-auto">
                   <span>Et pleins de nouveautés prochainement…</span>
                 </h5>
               </div>

@@ -167,7 +167,7 @@ const Bootcamp = () => {
             </div>
 
             <button type="submit" className="btn btn-primary my-3">
-              Submit
+              Envoyer
             </button>
           </form>
         </div>
