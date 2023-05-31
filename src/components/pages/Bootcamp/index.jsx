@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import "./index.scss";
 import Loader from "../../Loader";
 
@@ -19,7 +19,7 @@ const Bootcamp = () => {
     return <Loader />;
   }
 
-  const changeNumOfPeople = () => {
+  const changeNumOfPeople = (event) => {
     setNumOfPeople(event.target.value);
   };
 
@@ -34,8 +34,7 @@ const Bootcamp = () => {
         "g-c31pXbX-Qd1x3rM"
       );
 
-      alert("Message sent successfuly");
-      // Empty all fields
+      alert("Message sent successfully");
       const inputs = refForm.current.querySelectorAll(
         "input[type=text], input[type=email], textarea"
       );
@@ -43,7 +42,7 @@ const Bootcamp = () => {
       inputs.forEach((input) => (input.value = ""));
     } catch (error) {
       console.error(error);
-      alert("There was an error please try again");
+      alert("There was an error, please try again");
     }
   };
 
@@ -107,7 +106,7 @@ const Bootcamp = () => {
 
             <div className="form-group my-3">
               <label htmlFor="email">
-                Address Email: <span className="text-danger">*</span>
+                Adresse Email: <span className="text-danger">*</span>
               </label>
               <input
                 type="email"
@@ -123,7 +122,6 @@ const Bootcamp = () => {
               <label htmlFor="numOfPeople">Nombre de personnes:</label>
               <input
                 type="range"
-                name="nombre_personnes"
                 min="5"
                 max="15"
                 className="form-range"
@@ -154,26 +152,11 @@ const Bootcamp = () => {
               </label>
               <input
                 type="time"
-                name="houre"
+                name="hour"
                 className="form-control"
                 id="time"
                 required
               />
-            </div>
-
-            <div className="form-group my-3">
-              <label htmlFor="numOfPeople">Nombre de personnes:</label>
-              <input
-                type="range"
-                min="5"
-                max="15"
-                className="form-range"
-                id="numOfPeople"
-                value={numOfPeople}
-                onChange={handleNumOfPeopleChange}
-                required
-              />
-              <div>{numOfPeople} personnes</div>
             </div>
 
             <div className="form-group my-3">
