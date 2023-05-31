@@ -44,11 +44,11 @@ const Posts = () => {
           <ConsoleImage key={post.id} reserved={post.isReserved} />
         ))}
       </div>
-      <div className="row mt-5">
-        {pcPosts.map((post) => (
-          <div className="col-3 p-md-5 p-1 text-center" key={post.id}>
-            <PcImage pcId={post.id} reserved={post.isReserved} />
-          </div>
+      <div className="row mt-5 justify-content-center">
+        {pcPosts.map((post, index) => (
+          <div className="col-5 p-md-4 p-1 text-center" key={post.id}>
+          <PcImage pcId={post.id} reserved={post.isReserved} isLeftColumn={index % 2 === 0} games={post.games} />
+          </div>        
         ))}
       </div>
     </>

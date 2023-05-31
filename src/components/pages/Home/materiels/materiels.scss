@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-/* Section Services Start */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');/* Section Services Start */
 .services {
     margin-top: 50px;
     
@@ -60,6 +59,7 @@
   }
   
   .materiel {
+    color: #fff;
     font-size: 12px;
     font-family: $font-family;
     @include bold;

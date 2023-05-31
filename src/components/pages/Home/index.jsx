@@ -6,6 +6,7 @@ import Materiels from "./materiels/materiel";
 import Photogames from "./Photogame";
 import Hbc from "./homebc";
 import Posts from "./Posts";
+import Cardd from "./offres";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,6 +31,7 @@ const Home = () => {
       <Materiels />
       <Photogames />
       <Hbc />
+      <Cardd />
     </>
   );
 };

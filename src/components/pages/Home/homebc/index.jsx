@@ -1,5 +1,5 @@
 import "./Hbc.scss";
-import Img1 from "/img/img1.jpeg";
+import vd from "/vd.mp4";
 import ic from "/icons/snacks.svg";
 import ic1 from "/icons/people.svg";
 import ic2 from "/icons/pc.svg";
@@ -14,9 +14,8 @@ const Hbc = () => {
         <div className="main-text">
           <h2>Bootcamp</h2>
         </div>
-        <br />
-        <div className="row justify-content-between">
-          <div className="col-lg-5 py-3 py-md-0">
+        <div className="row">
+          <div className="book col-lg-6 py-3 py-md-0"> <br /><br /> <br /><br /> <br />
             <p>
               Tu souhaites réserver la salle pour un bootcamp, un anniversaire
               ou un autre événement rien que pour toi et tes amis ?
@@ -27,25 +26,19 @@ const Hbc = () => {
             <br />
           </div>
 
-          <div className="col-lg-5  py-3 py-md-0">
+          <div className="col-lg-6 py-3 py-md-0">
             <div className="cardphoto">
-              <div
-                id="carouselExampleControls"
-                className="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div className=" carousel-item active">
-                  <img
-                    src={Img1}
-                    height="100"
-                    className="d-block w-100 object-fit-cover"
-                    alt="..."
-                  />
+              <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <video src={vd} className="video-player" autoPlay loop muted />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
         <section className="servicesss" id="packages">
           <div className="container">
             <div className="main-txt ic-text"></div>

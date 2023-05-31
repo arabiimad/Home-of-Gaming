@@ -3,7 +3,7 @@
 .servicess {
   margin-top: 50px;
 
-  .cardd img {
+  .carddd img {
     border: none;
     box-shadow: 0 4px 8px 0 rgba(24, 74, 237, 0.58);
     cursor: pointer;
@@ -21,7 +21,7 @@
       margin-right: 15px;
     }
 
-    .cardd-body {
+    .carddd-body {
       text-align: center;
 
       table {
@@ -66,7 +66,7 @@ $font-family: "Inter", sans-serif;
 /* Responsive styles */
 @media (max-width: 767px) {
   .servicess {
-    .cardd {
+    .carddd {
       width: 100%;
       display: inline-block;
       vertical-align: top;
@@ -82,14 +82,14 @@ $font-family: "Inter", sans-serif;
         margin-bottom: 10px;
       }
 
-      .cardd-body {
+      .carddd-body {
         p {
           margin-top: 10px;
         }
       }
     }
 
-    .cardd:nth-child(even) {
+    .carddd:nth-child(even) {
       clear: both;
     }
   }
