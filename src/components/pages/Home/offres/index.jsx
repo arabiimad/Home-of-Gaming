@@ -1,3 +1,4 @@
+//offres/index.jsx
 import React from 'react';
 import './index.scss';
 

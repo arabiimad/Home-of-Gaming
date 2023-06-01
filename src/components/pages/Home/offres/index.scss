@@ -1,3 +1,4 @@
+//offres/index.scss
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
@@ -36,11 +37,11 @@ body {
   color: var(--clr-neutral-100);
   background-size: cover;
   padding: 10rem 0 0;
-  width: 35ch; height: 50ch;
+  width: 35ch; height: 45ch;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 500ms ease;
-  margin: 1rem 8.7rem 0;
+  margin: 1rem 4rem 0;
   &:hover,
   &:focus-within {
     transform: scale(1.05);
@@ -81,7 +82,7 @@ body {
 
 @media (hover) {
   .cardd .cardd-content {
-    transform: translateY(65%);
+    transform: translateY(55%);
     transition: transform 500ms ease;
   }
 
