@@ -3,27 +3,38 @@ import reservedPc from "/img/pc-reserved.svg";
 import freePc from "/img/pc-free.svg";
 import reservedPc2 from "/img/pc-reserved2.svg";
 import freePc2 from "/img/pc-free2.svg";
+import './index.scss';
 
 const PcImage = ({ pcId, reserved, isLeftColumn }) => {
   const [showGames, setShowGames] = useState(false);
+  const [timerId, setTimerId] = useState(null);
 
-  // This is a temporary list of games. You will replace this with the actual games data from Firebase in the future.
   const games = ['Game 1', 'Game 2', 'Game 3']; 
 
-  const toggleShowGames = () => {
-    setShowGames(!showGames);
+  const handleMouseEnter = () => {
+    clearTimeout(timerId);
+    setShowGames(true);
+  };
+
+  const handleMouseLeave = () => {
+    let timer = setTimeout(() => setShowGames(false), 1000);
+    setTimerId(timer);
   };
 
   return (
-    <div onMouseEnter={toggleShowGames} onMouseLeave={toggleShowGames}>
+    <div 
+      className={`pc-image ${reserved ? 'reserved' : ''}`} 
+      onMouseEnter={handleMouseEnter} 
+      onMouseLeave={handleMouseLeave}
+    >
       <span className="text-center d-block">{pcId}</span>
-      {reserved ? (
-        <img className="img-fluid" src={isLeftColumn ? reservedPc : reservedPc2} alt="reserved" />
-      ) : (
-        <img className="img-fluid" src={isLeftColumn ? freePc2 : freePc} alt="free" />
-      )}
+      <img 
+        className={`img-fluid ${isLeftColumn ? 'left' : 'right'}`} 
+        src={reserved ? (isLeftColumn ? reservedPc : reservedPc2) : (isLeftColumn ? freePc2 : freePc)} 
+        alt={reserved ? 'reserved' : 'free'}
+      />
       {showGames && (
-        <div>
+        <div className="games">
           {games.map((game, index) => (
             <p key={index}>{game}</p>
           ))}
