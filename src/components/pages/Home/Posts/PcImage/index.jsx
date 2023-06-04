@@ -1,15 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 import reservedPc from "/img/pc-reserved.svg";
 import freePc from "/img/pc-free.svg";
 import reservedPc2 from "/img/pc-reserved2.svg";
 import freePc2 from "/img/pc-free2.svg";
-import './index.scss';
+import "./index.scss";
 
-const PcImage = ({ pcId, reserved, isLeftColumn }) => {
+const PcImage = ({ pcId, reserved, isLeftColumn, games }) => {
   const [showGames, setShowGames] = useState(false);
   const [timerId, setTimerId] = useState(null);
-
-  const games = ['Game 1', 'Game 2', 'Game 3']; 
 
   const handleMouseEnter = () => {
     clearTimeout(timerId);
@@ -22,16 +20,24 @@ const PcImage = ({ pcId, reserved, isLeftColumn }) => {
   };
 
   return (
-    <div 
-      className={`pc-image ${reserved ? 'reserved' : ''}`} 
-      onMouseEnter={handleMouseEnter} 
+    <div
+      className={`pc-image ${reserved ? "reserved" : ""}`}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <span className="text-center d-block">{pcId}</span>
-      <img 
-        className={`img-fluid ${isLeftColumn ? 'left' : 'right'}`} 
-        src={reserved ? (isLeftColumn ? reservedPc : reservedPc2) : (isLeftColumn ? freePc2 : freePc)} 
-        alt={reserved ? 'reserved' : 'free'}
+      <img
+        className={`img-fluid ${isLeftColumn ? "left" : "right"}`}
+        src={
+          reserved
+            ? isLeftColumn
+              ? reservedPc
+              : reservedPc2
+            : isLeftColumn
+            ? freePc2
+            : freePc
+        }
+        alt={reserved ? "reserved" : "free"}
       />
       {showGames && (
         <div className="games">
