@@ -1,3 +1,4 @@
+//home/Posts/ConsoleImage/index.jsx
 import reservedConsole from "/img/console-reserved.png";
 import freeConsole from "/img/console-free.svg";
 

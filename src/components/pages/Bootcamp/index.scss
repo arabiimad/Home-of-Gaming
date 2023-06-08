@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btn-primary {
   padding: 17px 40px;
   border: 0;
@@ -24,3 +25,71 @@
   transform: translateY(10px);
   transition: 100ms;
 }
+=======
+.question {
+    background-color: #6c757d; border-radius: 0.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem; margin-bottom: 1.5rem; 
+}
+
+.questionText {
+    display: flex; justify-content: space-between; align-items: center; color: slateblue; 
+}
+
+.questionText p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.questionText .questionBtn {
+    font-size: 1.8rem;
+    font-weight: 500; color: rgb(36, 9, 214);
+    border: none;
+    background: black; cursor: pointer; 
+}
+
+.answerText {
+    border-top: 2px solid slategray; padding: 0.5rem 0 0 0; text-align: justify; display: none; 
+}
+
+.minus {
+    display: none;
+}
+
+.showText .answerText { display: block;
+}
+
+.showText .minus { display: inline;
+}
+
+.showText .plus { display: none;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(162, 7, 7);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(249, 100%, 28%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(9, 1, 44) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(147, 50%, 47%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(0 153 0) 0px 7px 29px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+   
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003

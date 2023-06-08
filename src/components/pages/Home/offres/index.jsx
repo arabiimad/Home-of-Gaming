@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import './index.scss';
 
 const Cardd = ({ title, body, buttonText }) => (
@@ -9,10 +10,21 @@ const Cardd = ({ title, body, buttonText }) => (
       <a href="#" className="button">
         {buttonText}
       </a>
+=======
+import './index.scss'; // Assuming you've named your SCSS file as Card.scss
+
+const Card = ({ title, content }) => (
+  <div className="card">
+    <div className="content">
+      <p className="heading">{title}</p>
+      <p className="para">{content}</p>
+      <button className="btn">Read more</button>
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
     </div>
   </div>
 );
 
+<<<<<<< HEAD
 const Card = () => (
   <div className="cardd-container">
     <Cardd
@@ -34,3 +46,14 @@ const Card = () => (
 );
 
 export default Card;
+=======
+const CardContainer = () => (
+  <div className="card-container">
+    <Card title="Card Hover Effect 1" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam at voluptas minus culpa deserunt delectus sapiente inventore pariatur" />
+    <Card title="Card Hover Effect 2" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam at voluptas minus culpa deserunt delectus sapiente inventore pariatur" />
+    <Card title="Card Hover Effect 3" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam at voluptas minus culpa deserunt delectus sapiente inventore pariatur" />
+  </div>
+);
+
+export default CardContainer;
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003

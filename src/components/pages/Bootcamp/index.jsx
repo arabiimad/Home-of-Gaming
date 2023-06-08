@@ -15,6 +15,60 @@ const Bootcamp = () => {
     }, 3000);
   }, []);
 
+<<<<<<< HEAD
+=======
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [numOfPeople, setNumOfPeople] = useState(5);
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleFullNameChange = (event) => {
+    setFullName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleNumOfPeopleChange = (event) => {
+    setNumOfPeople(event.target.value);
+  };
+
+  const handleDateChange = (event) => {
+    const enteredDate = new Date(event.target.value);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Reset hours, minutes, seconds and ms
+  
+    if (enteredDate >= today) {
+      setDate(event.target.value);
+    } else {
+      alert("Vous pouvez pas choisir une date ancienne!");
+      setDate(""); // Clear the field
+    }
+  };
+
+  const handleTimeChange = (event) => {
+    setTime(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Code to handle form submission
+    console.log("Full Name:", fullName);
+    console.log("Email Address:", email);
+    console.log("Number of People:", numOfPeople);
+    console.log("Date:", date);
+    console.log("Time:", time);
+    console.log("Message:", message);
+  };
+
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
   if (isLoading) {
     return <Loader />;
   }
@@ -119,6 +173,7 @@ const Bootcamp = () => {
               />
             </div>
 
+<<<<<<< HEAD
             <div className="form-group my-3">
               <label htmlFor="numOfPeople">Nombre de personnes:</label>
               <input
@@ -134,6 +189,9 @@ const Bootcamp = () => {
               />
               <div>{numOfPeople} personnes</div>
             </div>
+=======
+            
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
 
             <div className="form-group my-3">
               <label htmlFor="date">
@@ -162,11 +220,30 @@ const Bootcamp = () => {
             </div>
 
             <div className="form-group my-3">
+              <label htmlFor="numOfPeople">Nombre de personnes:</label>
+              <input
+                type="range"
+                min="5"
+                max="15"
+                className="form-range"
+                id="numOfPeople"
+                value={numOfPeople}
+                onChange={handleNumOfPeopleChange}
+                required
+              />
+              <div>{numOfPeople} personnes</div>
+            </div>
+
+            <div className="form-group my-3">
               <label htmlFor="message">Message:</label>
               <textarea name="message" className="form-control" id="message" />
             </div>
 
+<<<<<<< HEAD
             <button type="submit" className="btn btn-primary my-3">
+=======
+            <button type="submit">
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
               Envoyer
             </button>
           </form>

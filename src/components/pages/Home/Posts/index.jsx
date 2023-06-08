@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import firebase from "../../../../firebase";
 import ConsoleImage from "./ConsoleImage";
 import PcImage from "./PcImage";
+import UnderPosts from "../../../../img/UnderPosts.svg";
+import "./index.scss"; // Import a CSS file for styling
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -37,7 +39,7 @@ const Posts = () => {
   return (
     <>
       <h1 className="text-center fw-bolder m-5">
-        Suivi Du Status En Temps Réel
+        Suivi du status en temps réel *
       </h1>
       <div className="d-flex align-items-center justify-content-center gap-5 w-50 mx-auto">
         {consolePosts.map((post) => (
@@ -47,9 +49,17 @@ const Posts = () => {
       <div className="row mt-5 justify-content-center">
         {pcPosts.map((post, index) => (
           <div className="col-5 p-md-4 p-1 text-center" key={post.id}>
-          <PcImage pcId={post.id} reserved={post.isReserved} isLeftColumn={index % 2 === 0} games={post.games} />
-          </div>        
+            <PcImage
+              pcId={post.id}
+              reserved={post.isReserved}
+              isLeftColumn={index % 2 === 0}
+              games={post.Games}
+            />
+          </div>
         ))}
+      </div>
+      <div className="text-center">
+        <img src={UnderPosts} alt="Description" className="Underposts" />
       </div>
     </>
   );
