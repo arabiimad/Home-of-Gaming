@@ -30,41 +30,34 @@ const Reservation = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     // Validation for date and time
     const selectedDateTime = new Date(`${reservation.date}T${reservation.time}`);
     if (selectedDateTime <= new Date()) {
       alert('Veuillez choisir une date et heure en future.');
       return;
     }
-
+  
     const db = firebase.firestore();
-    const user = firebase.auth().currentUser;
-    if (user) {
-      try {
-        await db.collection('reservations').add({
-          userId: user.uid,
-          ...reservation
+    try {
+      await db.collection('reservations').add({
+        ...reservation
+      });
+  
+      // Send email
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', reservation, 'YOUR_USER_ID')
+        .then((response) => {
+           console.log('SUCCESS!', response.status, response.text);
+        }, (error) => {
+           console.log('FAILED...', error);
         });
-
-        // Send email
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', reservation, 'YOUR_USER_ID')
-          .then((response) => {
-             console.log('SUCCESS!', response.status, response.text);
-          }, (error) => {
-             console.log('FAILED...', error);
-          });
-
-        alert('Reservation made successfully!');
-      } catch (error) {
-        console.error("Error adding document: ", error);
-      }
-    } else {
-      // No user is signed in.
-      alert('Please login first.');
+  
+      alert('Reservation made successfully!');
+    } catch (error) {
+      console.error("Error adding document: ", error);
     }
   }
-
+  
   if (isLoading) {
     return <Loader />;
   }

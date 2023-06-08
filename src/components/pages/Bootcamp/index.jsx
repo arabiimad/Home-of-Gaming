@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import "./index.scss";
 import Loader from "../../Loader";
 
@@ -15,68 +15,11 @@ const Bootcamp = () => {
     }, 3000);
   }, []);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [numOfPeople, setNumOfPeople] = useState(5);
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleFullNameChange = (event) => {
-    setFullName(event.target.value);
-  };
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleNumOfPeopleChange = (event) => {
-    setNumOfPeople(event.target.value);
-  };
-
-  const handleDateChange = (event) => {
-    const enteredDate = new Date(event.target.value);
-    const today = new Date();
-    today.setHours(0, 0, 0, 0); // Reset hours, minutes, seconds and ms
-  
-    if (enteredDate >= today) {
-      setDate(event.target.value);
-    } else {
-      alert("Vous pouvez pas choisir une date ancienne!");
-      setDate(""); // Clear the field
-    }
-  };
-
-  const handleTimeChange = (event) => {
-    setTime(event.target.value);
-  };
-
-  const handleMessageChange = (event) => {
-    setMessage(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Code to handle form submission
-    console.log("Full Name:", fullName);
-    console.log("Email Address:", email);
-    console.log("Number of People:", numOfPeople);
-    console.log("Date:", date);
-    console.log("Time:", time);
-    console.log("Message:", message);
-  };
-
->>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
   if (isLoading) {
     return <Loader />;
   }
 
-  const changeNumOfPeople = () => {
+  const changeNumOfPeople = (event) => {
     setNumOfPeople(event.target.value);
   };
 
@@ -91,8 +34,7 @@ const Bootcamp = () => {
         "g-c31pXbX-Qd1x3rM"
       );
 
-      alert("Message sent successfuly");
-      // Empty all fields
+      alert("Message sent successfully");
       const inputs = refForm.current.querySelectorAll(
         "input[type=text], input[type=email], textarea"
       );
@@ -100,7 +42,7 @@ const Bootcamp = () => {
       inputs.forEach((input) => (input.value = ""));
     } catch (error) {
       console.error(error);
-      alert("There was an error please try again");
+      alert("There was an error, please try again");
     }
   };
 
@@ -164,7 +106,7 @@ const Bootcamp = () => {
 
             <div className="form-group my-3">
               <label htmlFor="email">
-                Address Email: <span className="text-danger">*</span>
+                Adresse Email: <span className="text-danger">*</span>
               </label>
               <input
                 type="email"
@@ -176,15 +118,10 @@ const Bootcamp = () => {
               />
             </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
             <div className="form-group my-3">
               <label htmlFor="numOfPeople">Nombre de personnes:</label>
               <input
                 type="range"
-                name="nombre_personnes"
                 min="5"
                 max="15"
                 className="form-range"
@@ -195,12 +132,6 @@ const Bootcamp = () => {
               />
               <div>{numOfPeople} personnes</div>
             </div>
-<<<<<<< HEAD
-=======
-            
->>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
 
             <div className="form-group my-3">
               <label htmlFor="date">
@@ -221,7 +152,7 @@ const Bootcamp = () => {
               </label>
               <input
                 type="time"
-                name="houre"
+                name="hour"
                 className="form-control"
                 id="time"
                 required
@@ -229,34 +160,11 @@ const Bootcamp = () => {
             </div>
 
             <div className="form-group my-3">
-              <label htmlFor="numOfPeople">Nombre de personnes:</label>
-              <input
-                type="range"
-                min="5"
-                max="15"
-                className="form-range"
-                id="numOfPeople"
-                value={numOfPeople}
-                onChange={handleNumOfPeopleChange}
-                required
-              />
-              <div>{numOfPeople} personnes</div>
-            </div>
-
-            <div className="form-group my-3">
               <label htmlFor="message">Message:</label>
               <textarea name="message" className="form-control" id="message" />
             </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             <button type="submit" className="btn btn-primary my-3">
-=======
-            <button type="submit">
->>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
-=======
-            <button type="submit" className="btn btn-primary my-3">
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
               Envoyer
             </button>
           </form>

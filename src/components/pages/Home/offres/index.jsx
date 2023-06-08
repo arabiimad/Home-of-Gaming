@@ -1,71 +1,40 @@
+//offres/index.jsx
 import React from 'react';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
 import './index.scss';
 
-const Cardd = ({ title, body, buttonText }) => (
-  <div className="cardd">
+const Cardd = ({ title, body, imageUrl  }) => (
+  <div className="cardd" style={{backgroundImage: `url(${imageUrl})`}}>
     <div className="cardd-content">
       <h2 className="cardd-title">{title}</h2>
+      <br />
       <p className="cardd-body">{body}</p>
-      <a href="#" className="button">
-        {buttonText}
-      </a>
-<<<<<<< HEAD
-=======
-import './index.scss'; // Assuming you've named your SCSS file as Card.scss
-
-const Card = ({ title, content }) => (
-  <div className="card">
-    <div className="content">
-      <p className="heading">{title}</p>
-      <p className="para">{content}</p>
-      <button className="btn">Read more</button>
->>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
     </div>
   </div>
 );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
 const Card = () => (
   <div className="cardd-container">
-    <Cardd
-      title="Abonnement 1"
-      body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, culpa."
-      buttonText="Learn More"
-    />
-    <Cardd
-      title="Abonnement 2"
-      body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, culpa."
-      buttonText="Discover"
-    />
-    <Cardd
-      title="Abonnement 3"
-      body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, culpa."
-      buttonText="Get Started"
-    />
+    <h1>Forfaits Jeux Privilégiés</h1>
+    <div className="cards-row">
+        <Cardd
+          title="Iron Pass" 
+          body="Préparez-vous à conquérir le monde virtuel avec notre Pass Fer. Profitez de 16 heures intenses de jeux PC pour seulement 230 MAD. C'est l'arme parfaite pour tout vrai gamer!"
+          imageUrl="https://images.alphacoders.com/681/681587.png"
+        />
+        
+        <Cardd
+          title="Epic Pass"
+          body="Avec notre Pass Épique, vous pouvez jouer sans arrêt pendant 24 heures sur PC pour seulement 330 MAD. Une véritable aventure épique vous attend!   "
+          imageUrl="https://images5.alphacoders.com/124/1244644.jpg"
+        /> <br /> <br />
+        <Cardd
+          className ="card contentt"
+          title="Mega Pass"
+          body="Saisissez l'occasion d'explorer les deux mondes des jeux sur PC et PS5 avec notre Pass Méga.Profitez de 15 heures de gameplay diversifié pour seulement 270 MAD!"
+          imageUrl="https://images7.alphacoders.com/130/1305956.png"
+        />
+  </div>
   </div>
 );
 
 export default Card;
-<<<<<<< HEAD
-=======
-const CardContainer = () => (
-  <div className="card-container">
-    <Card title="Card Hover Effect 1" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam at voluptas minus culpa deserunt delectus sapiente inventore pariatur" />
-    <Card title="Card Hover Effect 2" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam at voluptas minus culpa deserunt delectus sapiente inventore pariatur" />
-    <Card title="Card Hover Effect 3" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam at voluptas minus culpa deserunt delectus sapiente inventore pariatur" />
-  </div>
-);
-
-export default CardContainer;
->>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
-=======
->>>>>>> 6728448895655913185a320351e6b63ca9737fa9
