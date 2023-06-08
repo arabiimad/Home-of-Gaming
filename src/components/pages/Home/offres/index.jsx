@@ -1,5 +1,8 @@
 import React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
 import './index.scss';
 
 const Cardd = ({ title, body, buttonText }) => (
@@ -10,6 +13,7 @@ const Cardd = ({ title, body, buttonText }) => (
       <a href="#" className="button">
         {buttonText}
       </a>
+<<<<<<< HEAD
 =======
 import './index.scss'; // Assuming you've named your SCSS file as Card.scss
 
@@ -20,11 +24,16 @@ const Card = ({ title, content }) => (
       <p className="para">{content}</p>
       <button className="btn">Read more</button>
 >>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
     </div>
   </div>
 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
 const Card = () => (
   <div className="cardd-container">
     <Cardd
@@ -46,6 +55,7 @@ const Card = () => (
 );
 
 export default Card;
+<<<<<<< HEAD
 =======
 const CardContainer = () => (
   <div className="card-container">
@@ -57,3 +67,5 @@ const CardContainer = () => (
 
 export default CardContainer;
 >>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9

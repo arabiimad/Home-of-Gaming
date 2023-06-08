@@ -16,6 +16,7 @@ const Bootcamp = () => {
   }, []);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -69,6 +70,8 @@ const Bootcamp = () => {
   };
 
 >>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
   if (isLoading) {
     return <Loader />;
   }
@@ -174,6 +177,9 @@ const Bootcamp = () => {
             </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
             <div className="form-group my-3">
               <label htmlFor="numOfPeople">Nombre de personnes:</label>
               <input
@@ -189,9 +195,12 @@ const Bootcamp = () => {
               />
               <div>{numOfPeople} personnes</div>
             </div>
+<<<<<<< HEAD
 =======
             
 >>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
 
             <div className="form-group my-3">
               <label htmlFor="date">
@@ -240,10 +249,14 @@ const Bootcamp = () => {
             </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <button type="submit" className="btn btn-primary my-3">
 =======
             <button type="submit">
 >>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+            <button type="submit" className="btn btn-primary my-3">
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
               Envoyer
             </button>
           </form>
