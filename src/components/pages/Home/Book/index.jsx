@@ -1,5 +1,5 @@
 import React from 'react';
-import './Book.scss';
+import './book.scss';
 import Img1 from '/img/img1.jpeg';
 import Img3 from '/img/img3.jpeg';
 import img4 from '/img/img4.jpeg';

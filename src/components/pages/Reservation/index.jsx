@@ -66,10 +66,23 @@ const Reservation = () => {
     <div className="container-fluid">
       <div className="row justify-content-between" style={{ marginTop: "50px" }}>
         <div className="col-lg-6 tarif-container">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
           <h3 style={{fontWeight: "bold", fontSize: "35px", marginTop: "100px"}}>
             HOME OF GAMING C'EST QUOI ?
           </h3>
           <p style={{ marginBottom: "25px", fontSize: "25px" }}>
+<<<<<<< HEAD
+=======
+          <h3 style={{fontWeight: "bold", fontSize: "35px", marginTop: "20px"}}>
+            HOME OF GAMING C'EST QUOI ?
+          </h3>
+          <p style={{ marginBottom: "25px", fontSize: "30px" }}>
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
             Home of Gaming, c’est le meilleur E-Sport Center de Oujda ! <br />
             C’est aussi :
           </p>
@@ -84,12 +97,27 @@ const Reservation = () => {
         </div>
         <div className="col-lg-6 reservation-container">
           <form onSubmit={handleSubmit}>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
             <input name="name" type="text" value={reservation.name} onChange={handleChange} placeholder="Votre nom" required />
             <input name="phoneNumber" type="tel" maxLength="15" pattern="\d*" value={reservation.phoneNumber} onChange={handleChange} placeholder="Votre numero de telephone" required />
             <input name="date" type="date" value={reservation.date} onChange={handleChange} required />
             <input name="time" type="time" value={reservation.time} onChange={handleChange} required />
             <input name="numberOfPeople" type="number" min="1" max="5" value={reservation.numberOfPeople} onChange={handleChange} placeholder="Nombre de personnes" required />
             <button type="submit">Reserver</button>
+<<<<<<< HEAD
+=======
+            <input name="name" type="text" value={reservation.name} onChange={handleChange} placeholder="Your Name" />
+            <input name="phoneNumber" type="tel" maxLength="15" pattern="\d*" value={reservation.phoneNumber} onChange={handleChange} placeholder="Your Phone Number" />
+            <input name="date" type="date" value={reservation.date} onChange={handleChange} />
+            <input name="time" type="time" value={reservation.time} onChange={handleChange} />
+            <input name="numberOfPeople" type="number" min="1" max="5" value={reservation.numberOfPeople} onChange={handleChange} placeholder="Number of People" />
+            <button type="submit">Reserve</button>
+>>>>>>> 5ee7c15f54232cc6c007ca0681aa7a508c8a8003
+=======
+>>>>>>> 6728448895655913185a320351e6b63ca9737fa9
           </form>
         </div>
       </div>
