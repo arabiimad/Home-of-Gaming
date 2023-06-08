@@ -1,4 +1,4 @@
-.btn-primary {
+.btn-primary-reservation {
   padding: 17px 40px;
   border: 0;
   background-color: #0465e3;
@@ -16,11 +16,11 @@
   box-shadow: rgb(138, 0, 0) 0px 7px 29px 0px;
 }
 
-.btn-primary:active {
+.btn-primary-reservation:active {
   letter-spacing: 3px;
-  background-color: #0465e3;
+  background-color: hsl(147, 50%, 47%);
   color: hsl(0, 0%, 100%);
-  box-shadow: rgb(42, 0, 194) 0px 7px 29px 0px;
+  box-shadow: rgb(0 153 0) 0px 7px 29px 0px;
   transform: translateY(10px);
   transition: 100ms;
 }
